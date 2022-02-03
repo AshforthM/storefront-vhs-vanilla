@@ -1,0 +1,1 @@
+#Storefront VHS tapes CRUD using vanilla js and firebase realtime database

@@ -1,0 +1,33 @@
+{
+  "name": "storefront-vanilla-js",
+  "version": "1.0.0",
+  "description": "### Initialize Project Folder to Use NPM  - on the command line run the following command. ```npm    npm init ```",
+  "scripts": {
+    "clean": "rm -rf node_modules .git .parcel-cache dist .DS_Store",
+    "static": "cp -rf ./src/static   dist",
+    "start": "npx parcel src/index.html",
+    "build": "npx parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "M A",
+  "license": "ISC",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "firebase": "^9.6.3",
+    "nanoid": "^3.2.0",
+    "parcel": "^2.2.1"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.2.1",
+    "@parcel/transformer-webmanifest": "^2.2.1"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshforthM/storefront-vhs-vanilla.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AshforthM/storefront-vhs-vanilla/issues"
+  },
+  "homepage": "https://github.com/AshforthM/storefront-vhs-vanilla#readme"
+}
