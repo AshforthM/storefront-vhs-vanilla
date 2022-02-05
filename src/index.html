@@ -13,24 +13,41 @@
     <script type="module" src="js/index.js" defer></script>
   </head>
 
-  <header class=""></header>
-
   <body>
-    <nav class="appbar">
-      <a href="index.html" class="read">Home</a>
-    </nav>
-    <main>
-      <div class="container-display">
-        <div class="sidebar">
-          <ul class="">
-            <li><a href="index.html" class="read">Home</a></li>
-            <li><a href="write.html" class="write">Add</a></li>
-            <li><a href="update.html" class="update">Update</a></li>
-          </ul>
-        </div>
-        <div class="display-area">
-          <h1>display area</h1>
-        </div>
+    <main class="dashboard">
+      <nav class="appbar">
+        <ul>
+          <li><a href="index.html" class="read">Logo</a></li>
+          <li>Banner</li>
+          <li class="options">
+            <span>Email</span><span>Avatar</span><span>Settings</span>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar">
+        <ul>
+          <li><a href="write.html" class="write">Add Product</a></li>
+          <li><a href="update.html" class="update">Update</a></li>
+        </ul>
+      </div>
+
+      <div class="card-container">
+        <ul>
+          <li class="card">
+            <img src="https://via.placeholder.com/150" />
+            <ul class="card-options">
+              <li><a href="#">Update</a></li>
+              <li><a href="#">Delete</a></li>
+            </ul>
+            <div class="product-details">
+              <span class="product-name">Product Name</span>
+              <span class="price">Price</span>
+              <span class="reviews">Reviews</span>    
+              <button class="btn-buy">Buy Now</button>          
+            </div>            
+          </li>
+        </ul>
       </div>
     </main>
   </body>

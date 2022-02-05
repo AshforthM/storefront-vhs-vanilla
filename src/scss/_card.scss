@@ -1,0 +1,54 @@
+.card{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: #ffff00;
+    height: 30rem;
+    width: 18rem;
+    box-shadow: 0 0 1px 1px grey;
+    margin: 1rem;
+    img{
+        height: 18rem;
+        padding: 0.5rem;
+    }
+    span{
+        padding: 0.25rem;
+    }
+}
+
+.card-options{
+    position: absolute;
+    right: 0;
+    margin: 1rem 1.2rem;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    button{
+        padding: 0.5rem 2rem;
+        margin: 0.5rem;
+    }
+}
+
+.product-name{
+    font-size: 24px;
+}
+
+.price{
+    font-size: 26px;
+}
+
+.reviews{
+    font-size: 20px;
+}
+
+.btn-buy{
+    &:hover{
+        cursor: pointer;
+    }
+}

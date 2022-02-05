@@ -1,0 +1,46 @@
+.dashboard{
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    width: 289px;
+    height: calc(100vh - calc(64px + 4rem));
+    background-color: wheat;
+    box-shadow: 0 0 1px 0.5px grey;
+    margin: 2rem 0;
+}
+
+.appbar{
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 1px 1px grey;
+    padding: 1rem;
+    min-height: 64px;
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.options{
+    display: flex;
+    gap: 1rem;
+}
+
+.card-container{
+    width: calc(100% - calc(289px + 4rem));
+    height: calc(100vh - calc(64px + 4rem));
+    background-color: aquamarine;
+    margin: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 0 1px 1px grey;
+}
+
+footer{
+    background-color: lightcoral;
+    padding: 1rem;
+    box-shadow: 0 0 1px 1px grey;
+
+}
