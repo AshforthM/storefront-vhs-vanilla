@@ -457,6 +457,11 @@ footer {
   box-shadow: 0 0 1px 1px grey;
 }
 
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
   display: flex;
   justify-content: center;
@@ -507,6 +512,13 @@ footer {
 }
 
 .btn-buy:hover {
+  cursor: pointer;
+}
+
+.file-label {
+  box-shadow: 0 0 1px 0.5px grey;
+}
+.file-label:hover {
   cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

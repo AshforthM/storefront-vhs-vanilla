@@ -16,21 +16,65 @@
   <header class=""></header>
 
   <body>
-    <nav class="appbar">
-      <a href="index.html" class="read">Home</a>
-    </nav>
-    <main>
-      <div class="container-display">
-        <div class="sidebar">
-          <ul class="">
-            <li><a href="index.html" class="read">Home</a></li>
-            <li><a href="write.html" class="write">Add</a></li>
-            <li><a href="update.html" class="update">Update</a></li>
-          </ul>
-        </div>
-        <div class="display-area">
-          <h1>display area</h1>
-        </div>
+    <main class="dashboard">
+      <nav class="appbar">
+        <ul>
+          <li><a href="index.html" class="read">Logo</a></li>
+          <li class="options">
+            <span>Email</span><span>Avatar</span><span>Settings</span>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar">
+        <ul>
+          <li><a href="write.html" class="write">Add Product</a></li>
+        </ul>
+      </div>
+
+      <div class="card-container">
+        <ul class="card-list">
+          <!-- Form -->
+          <form id="addForm" class="add-item-form">
+
+            <div class="">
+              <div class="image-display">
+                <img src="https://via.placeholder.com/150" alt="" />
+                <label for="itemImage" class="file-label">Select image</label>
+                <input
+                  type="file"
+                  id="itemImage"
+                  style="display: none"
+                  class="select-file"
+                  accept=".jpg, .png, .jpeg, .webp"
+                />
+              </div>
+
+              <div class="product-name form-control">
+                <label for="item-name">Product Name</label>
+                <input id="itemName" type="text" placeholder="name" />
+              </div>
+
+              <div class="product-price form-control">
+                <label for="item-price">Price</label>
+                <input id="itemPrice" type="text" placeholder="$" />
+              </div>
+
+              <div class="product-rating form-control">
+                <label for="item-rating">Rating</label>
+                <input id="itemRating" type="text" placeholder="rating" />
+              </div>
+
+              <div class="product-number form-control">
+                <label for="item-number">Number of tapes</label>
+                <input id="itemNumber" type="text" placeholder="0" />
+              </div>
+            </div>
+
+            <button class="btn-submit" type="submit">Add Product</button>
+
+          </form>
+        </ul>
       </div>
     </main>
   </body>

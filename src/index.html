@@ -15,10 +15,10 @@
 
   <body>
     <main class="dashboard">
+
       <nav class="appbar">
         <ul>
           <li><a href="index.html" class="read">Logo</a></li>
-          <li>Banner</li>
           <li class="options">
             <span>Email</span><span>Avatar</span><span>Settings</span>
           </li>
@@ -28,16 +28,41 @@
       <div class="sidebar">
         <ul>
           <li><a href="write.html" class="write">Add Product</a></li>
-          <li><a href="update.html" class="update">Update</a></li>
         </ul>
       </div>
 
       <div class="card-container">
-        <ul>
+        <ul class="card-list">
           <li class="card">
             <img src="https://via.placeholder.com/150" />
             <ul class="card-options">
-              <li><a href="#">Update</a></li>
+              <li><a href="update.html">Update</a></li>
+              <li><a href="#">Delete</a></li>
+            </ul>
+            <div class="product-details">
+              <span class="product-name">Product Name</span>
+              <span class="price">Price</span>
+              <span class="reviews">Reviews</span>    
+              <button class="btn-buy">Buy Now</button>          
+            </div>            
+          </li>
+          <li class="card">
+            <img src="https://via.placeholder.com/150" />
+            <ul class="card-options">
+              <li><a href="update.html">Update</a></li>
+              <li><a href="#">Delete</a></li>
+            </ul>
+            <div class="product-details">
+              <span class="product-name">Product Name</span>
+              <span class="price">Price</span>
+              <span class="reviews">Reviews</span>    
+              <button class="btn-buy">Buy Now</button>          
+            </div>            
+          </li>
+          <li class="card">
+            <img src="https://via.placeholder.com/150" />
+            <ul class="card-options">
+              <li><a href="update.html">Update</a></li>
               <li><a href="#">Delete</a></li>
             </ul>
             <div class="product-details">
@@ -49,6 +74,7 @@
           </li>
         </ul>
       </div>
+
     </main>
   </body>
 
