@@ -26,6 +26,11 @@
     position: absolute;
     right: 0;
     margin: 1rem 1.2rem;
+    li{
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }
 
 .product-details{

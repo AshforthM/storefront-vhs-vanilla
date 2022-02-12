@@ -7,9 +7,10 @@
     <meta name="msapplication-TileColor" content="#c8112e" />
     <meta name="theme-color" content="#c8112e" />
 
-    <title>VHS Storefront</title>
+    <title>VHS Storefront Add</title>
 
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/651cb78bad.js" crossorigin="anonymous"></script>
     <script type="module" src="js/write.js" defer></script>
   </head>
 
@@ -19,16 +20,19 @@
     <main class="dashboard">
       <nav class="appbar">
         <ul>
-          <li><a href="index.html" class="read">Logo</a></li>
+          <li>
+            <a href="index.html"><i class="fa-solid fa-ticket"></i></a>
+          </li>
           <li class="options">
-            <span>Email</span><span>Avatar</span><span>Settings</span>
+            <a href='#'><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-user-gear"></i></a>
           </li>
         </ul>
       </nav>
 
       <div class="sidebar">
         <ul>
-          <li><a href="write.html" class="write">Add Product</a></li>
+          <li><a href="write.html" class="write"><i class="fa-solid fa-plus"></i>Add Product</a></li>        
         </ul>
       </div>
 
@@ -39,7 +43,7 @@
 
             <div class="">
               <div class="image-display">
-                <img src="https://via.placeholder.com/150" alt="" />
+                <img id="uploadImage" src="https://via.placeholder.com/150" alt="" />
                 <label for="itemImage" class="file-label">Select image</label>
                 <input
                   type="file"
@@ -60,18 +64,13 @@
                 <input id="itemPrice" type="text" placeholder="$" />
               </div>
 
-              <div class="product-rating form-control">
-                <label for="item-rating">Rating</label>
-                <input id="itemRating" type="text" placeholder="rating" />
-              </div>
-
-              <div class="product-number form-control">
-                <label for="item-number">Number of tapes</label>
-                <input id="itemNumber" type="text" placeholder="0" />
+              <div class="product-blurb form-control">
+                <label for="item-blurb">Brief description</label>
+                <input id="itemBlurb" type="text" placeholder="blurb" />
               </div>
             </div>
 
-            <button class="btn-submit" type="submit">Add Product</button>
+            <button class="btn-submit" type="submit">Add New Product</button>
 
           </form>
         </ul>
@@ -79,5 +78,5 @@
     </main>
   </body>
 
-  <footer>Footer</footer>
+  <footer></footer>
 </html>

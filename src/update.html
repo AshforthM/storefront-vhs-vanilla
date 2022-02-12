@@ -7,9 +7,10 @@
     <meta name="msapplication-TileColor" content="#c8112e" />
     <meta name="theme-color" content="#c8112e" />
 
-    <title>VHS Storefront</title>
+    <title>VHS Storefront Update</title>
 
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/651cb78bad.js" crossorigin="anonymous"></script>
     <script type="module" src="js/update.js" defer></script>
   </head>
 
@@ -17,68 +18,62 @@
   
   <body>
     <main class="dashboard">
-
       <nav class="appbar">
         <ul>
-          <li><a href="index.html" class="read">Logo</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-ticket"></i></a></li>
           <li class="options">
-            <span>Email</span><span>Avatar</span><span>Settings</span>
+            <i class="fa-solid fa-envelope"></i><i class="fa-solid fa-user-gear"></i>
           </li>
         </ul>
       </nav>
 
       <div class="sidebar">
         <ul>
-          <li><a href="write.html" class="write">Add Product</a></li>
+          <li><a href="write.html" class="write"><i class="fa-solid fa-plus"></i>Add Product</a></li>      
         </ul>
       </div>
 
       <div class="card-container">
         <ul class="card-list">
-          <li class="card">
-            <img src="https://via.placeholder.com/150" />
-            <ul class="card-options">
-              <li><a href="update.html">Update</a></li>
-              <li><a href="#">Delete</a></li>
-            </ul>
-            <div class="product-details">
-              <span class="product-name">Product Name</span>
-              <span class="price">Price</span>
-              <span class="reviews">Reviews</span>    
-              <button class="btn-buy">Buy Now</button>          
-            </div>            
-          </li>
-          <li class="card">
-            <img src="https://via.placeholder.com/150" />
-            <ul class="card-options">
-              <li><a href="update.html">Update</a></li>
-              <li><a href="#">Delete</a></li>
-            </ul>
-            <div class="product-details">
-              <span class="product-name">Product Name</span>
-              <span class="price">Price</span>
-              <span class="reviews">Reviews</span>    
-              <button class="btn-buy">Buy Now</button>          
-            </div>            
-          </li>
-          <li class="card">
-            <img src="https://via.placeholder.com/150" />
-            <ul class="card-options">
-              <li><a href="update.html">Update</a></li>
-              <li><a href="#">Delete</a></li>
-            </ul>
-            <div class="product-details">
-              <span class="product-name">Product Name</span>
-              <span class="price">Price</span>
-              <span class="reviews">Reviews</span>    
-              <button class="btn-buy">Buy Now</button>          
-            </div>            
-          </li>
+          <!-- Form -->
+          <form id="updateForm" class="add-item-form">
+
+            <div id="'updateContainer" class="update-container">
+              <div class="image-display">
+                <img id="uploadImage" src="https://via.placeholder.com/150" alt="" />
+                <label for="itemImage" class="file-label">Select image</label>
+                <input
+                  type="file"
+                  id="itemImage"
+                  style="display: none"
+                  class="select-file"
+                  accept=".jpg, .png, .jpeg, .webp"
+                />
+              </div>
+
+              <div class="product-name form-control">
+                <label for="item-name">Product Name</label>
+                <input id="itemName" type="text" placeholder="name" />
+              </div>
+
+              <div class="product-price form-control">
+                <label for="item-price">Price</label>
+                <input id="itemPrice" type="text" placeholder="$" />
+              </div>
+
+              <div class="product-blurb form-control">
+                <label for="item-blurb">Brief description</label>
+                <input id="itemBlurb" type="text" placeholder="blurb" />
+              </div>
+            </div>
+
+            <button class="btn-submit" type="submit">Update Product</button>
+
+          </form>
         </ul>
       </div>
-
     </main>
   </body>
 
-  <footer>Footer</footer>
+  <footer></footer>
 </html>

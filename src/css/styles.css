@@ -486,6 +486,9 @@ footer {
   right: 0;
   margin: 1rem 1.2rem;
 }
+.card-options li:hover {
+  cursor: pointer;
+}
 
 .product-details {
   display: flex;
