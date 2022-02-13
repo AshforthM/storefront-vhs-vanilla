@@ -15,7 +15,8 @@
     "base-64": "^1.0.0",
     "firebase": "^9.6.3",
     "nanoid": "^3.2.0",
-    "parcel": "^2.2.1"
+    "parcel": "^2.2.1",
+    "sass": "^1.49.7"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.2.1",

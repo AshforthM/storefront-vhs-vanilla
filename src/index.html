@@ -10,46 +10,52 @@
     <title>VHS Storefront Home</title>
 
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://kit.fontawesome.com/651cb78bad.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/651cb78bad.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="js/index.js" defer></script>
   </head>
 
   <body>
     <main class="dashboard">
-
       <nav class="appbar">
         <ul>
-          <li><a href="index.html"><i class="fa-solid fa-ticket"></i></a></li>
-          <li class="options">
-            <i class="fa-solid fa-envelope"></i><i class="fa-solid fa-user-gear"></i>
+          <li class="logo">
+            <a href="index.html"
+              ><p class="title-logo">
+                <i class="fa-solid fa-ticket"></i
+                ><span class="title-large">VHS</span
+                ><span class="title-small"> Store</span>
+              </p></a
+            >
+          </li>
+          <li class="nav-options">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i
+            ><i class="fa-solid fa-user-gear" aria-hidden="true"></i>
           </li>
         </ul>
       </nav>
 
       <div class="sidebar">
         <ul>
-          <li><a href="write.html" class="write"><i class="fa-solid fa-plus"></i>Add Product</a></li>     
+          <li>
+            <a href="write.html" class="sidebar-options"
+              ><i class="fa-solid fa-plus"></i> Add Product</a
+            >
+          </li>
         </ul>
       </div>
+
+      <div class="color-bar"></div>
 
       <div class="card-container">
         <ul class="card-list" id="cardList">
-          <!-- <li class="card">
-            <img src="https://via.placeholder.com/150" />
-            <ul class="card-options">
-              <li><a href="update.html">Update</a></li>
-              <li><a href="#">Delete</a></li>
-            </ul>
-            <div class="product-details">
-              <span class="product-name">Product Name</span>
-              <span class="price">Price</span>
-              <span class="reviews">Reviews</span>    
-              <button class="btn-buy">Buy Now</button>          
-            </div>            
-          </li> -->
+          <!-- 
+            cards
+           -->
         </ul>
       </div>
-
     </main>
   </body>
 

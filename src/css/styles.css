@@ -411,50 +411,102 @@ body {
   background-color: #fff;
 }
 
+@font-face {
+  font-family: "DaretoMandra";
+  src: url("../static/fonts/DaretroMandra.ttf");
+}
 .dashboard {
-  background-color: #fcfcfc;
+  background-color: #f6f0e6;
   display: flex;
   flex-wrap: wrap;
+  color: #66112d;
+  font-family: "DaretoMandra";
 }
 
 .sidebar {
   width: 289px;
   height: calc(100vh - (64px + 4rem));
-  background-color: wheat;
-  box-shadow: 0 0 1px 0.5px grey;
+  box-shadow: 0 0 1px 0.5px #66112d;
   margin: 2rem 0;
+  padding: 3rem;
+}
+
+.sidebar-options {
+  color: #66112d;
+  transition: color 0.2s;
+  font-size: 20px;
+  font-weight: 600;
+}
+.sidebar-options:hover {
+  color: #0c787a;
+  text-decoration: none;
+}
+
+.color-bar {
+  width: 30px;
+  height: calc(100vh - (64px + 4rem));
+  margin: 2rem 0;
+  box-shadow: 0 0 1px 0.5px grey;
+  background: repeating-linear-gradient(-45deg, #81163a 0px 60px, #0c787a 60px 120px, #ffb141 120px 180px, #f17338 180px 240px, #c32227 240px 300px);
 }
 
 .appbar {
   width: 100%;
   position: relative;
-  box-shadow: 0 0 1px 1px grey;
-  padding: 1rem;
+  box-shadow: 0 0 1px 1px #66112d;
+  padding: 0.5rem;
   min-height: 64px;
+  font-size: 22px;
 }
 .appbar ul {
   display: flex;
   justify-content: space-between;
 }
 
-.options {
+.logo {
+  display: inline-block;
+  flex-direction: row;
+  cursor: pointer;
+  background: pink;
+  background: radial-gradient(circle at 33% 100%, #c32227 15%, #f17338 28%, #ffb141 45%, #0c787a 85%, #81163a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+}
+.logo:hover {
+  background: pink;
+  background: radial-gradient(circle at 80% 0%, #c32227 15%, #f17338 28%, #ffb141 45%, #0c787a 85%, #81163a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo .fa-solid {
+  padding-right: 1rem;
+}
+.logo span {
+  font-size: 30px;
+}
+.logo .title-large {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.nav-options {
   display: flex;
-  gap: 1rem;
+  gap: 2.5rem;
+  padding: 20px 14px 0 0;
+  font-size: 26px;
+  background: pink;
+  background: radial-gradient(circle at 10% 90%, #c32227 15%, #f17338 28%, #ffb141 35%, #0c787a 45%, #81163a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card-container {
-  width: calc(100% - (289px + 4rem));
+  width: calc(100% - (289px + 4rem + 30px));
   height: calc(100vh - (64px + 4rem));
-  background-color: aquamarine;
   margin: 2rem;
   border-radius: 6px;
-  box-shadow: 0 0 1px 1px grey;
-}
-
-footer {
-  background-color: lightcoral;
-  padding: 1rem;
-  box-shadow: 0 0 1px 1px grey;
+  box-shadow: 0 0 1px 1px #66112d;
 }
 
 .card-list {
@@ -467,18 +519,29 @@ footer {
   justify-content: center;
   position: relative;
   flex-wrap: wrap;
-  background-color: #ffff00;
   height: 30rem;
   width: 18rem;
-  box-shadow: 0 0 1px 1px grey;
+  box-shadow: 1px 1px 0.5px #4b0d22;
   margin: 1rem;
-}
-.card img {
-  height: 18rem;
-  padding: 0.5rem;
+  border-radius: 2px;
+  transition: box-shadow 0.2s;
 }
 .card span {
   padding: 0.25rem;
+}
+.card:hover {
+  box-shadow: 2px 1px 1px 1px #4b0d22;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  background-color: #d9c8ae;
+  width: 18rem;
+}
+.img-container img {
+  height: 18rem;
+  padding: 0.5rem;
 }
 
 .card-options {
@@ -486,8 +549,22 @@ footer {
   right: 0;
   margin: 1rem 1.2rem;
 }
-.card-options li:hover {
+.card-options li {
+  padding: 0 0 0.5rem 0;
+  transition: box-shadow 0.5s;
+}
+.card-options li i:hover {
+  box-shadow: 1px 1px 1px #f6f0e6;
   cursor: pointer;
+}
+.card-options i {
+  display: inline-block;
+  border-radius: 60px;
+  font-size: 18px;
+  box-shadow: 0 0 2px #4b0d22;
+  padding: 0.5rem 0.6rem;
+  background-color: #4b0d22;
+  color: #f6f0e6;
 }
 
 .product-details {
@@ -498,24 +575,33 @@ footer {
   justify-content: center;
 }
 .product-details button {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.5rem;
   margin: 0.5rem;
+  background-color: #f17338;
+  border-radius: 8px;
+  box-shadow: 2px 1px rgba(75, 13, 34, 0.5);
+  color: #f6f0e6;
+  font-weight: 400;
+  transition: box-shadow 0.2s;
+}
+.product-details button:hover {
+  cursor: pointer;
+  box-shadow: 3px 2px #4b0d22;
 }
 
 .product-name {
-  font-size: 24px;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .price {
-  font-size: 26px;
+  font-size: 24px;
+  font-weight: 900;
 }
 
-.reviews {
-  font-size: 20px;
-}
-
-.btn-buy:hover {
-  cursor: pointer;
+.blurb {
+  font-size: 17px;
 }
 
 .file-label {

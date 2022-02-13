@@ -1,46 +1,112 @@
+$base-color: #f6f0e6;
+$base-bergundy: #81163a;
+$base-teal: #0c787a;
+$base-yellow: #ffb141;
+$base-orange: #f17338;
+$base-red: #c32227;
+$default-font-color: #66112d;
+
+@font-face {
+    font-family: 'DaretoMandra';
+    src: url('../static/fonts/DaretroMandra.ttf');
+}
+
 .dashboard{
-    background-color: rgb(252, 252, 252);
+    background-color: $base-color;
     display: flex;
     flex-wrap: wrap;
+    color: $default-font-color;
+    font-family: 'DaretoMandra';    
 }
 
 .sidebar{
     width: 289px;
     height: calc(100vh - calc(64px + 4rem));
-    background-color: wheat;
-    box-shadow: 0 0 1px 0.5px grey;
+    box-shadow: 0 0 1px 0.5px $default-font-color;
     margin: 2rem 0;
+    padding: 3rem;
+}
+
+.sidebar-options{
+    color: $default-font-color;
+    transition: color 0.2s;
+    &:hover{
+        color: $base-teal;
+        text-decoration: none;
+    }
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.color-bar{
+    width: 30px;
+    height: calc(100vh - calc(64px + 4rem));
+    margin: 2rem 0;
+    box-shadow: 0 0 1px 0.5px grey;
+    background: repeating-linear-gradient(-45deg, $base-bergundy 0px 60px, $base-teal 60px 120px, $base-yellow 120px 180px, $base-orange 180px 240px, $base-red 240px 300px);
 }
 
 .appbar{
     width: 100%;
     position: relative;
-    box-shadow: 0 0 1px 1px grey;
-    padding: 1rem;
+    box-shadow: 0 0 1px 1px $default-font-color;
+    padding: 0.5rem;
     min-height: 64px;
     ul{
         display: flex;
         justify-content: space-between;
     }
+    font-size: 22px;
 }
 
-.options{
+.logo{
+    display: inline-block;
+    flex-direction: row;
+    cursor: pointer;
+    background: rgb(255, 192, 203);
+	background: radial-gradient(circle at 33% 100%, $base-red 15%, $base-orange 28%, $base-yellow 45%, $base-teal 85%, $base-bergundy);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    &:hover{
+        background: rgb(255, 192, 203);
+        background: radial-gradient(circle at 80% 0%, $base-red 15%, $base-orange 28%, $base-yellow 45%, $base-teal 85%, $base-bergundy);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+	font: {
+		size: 24px;
+	}
+    .fa-solid{
+        padding-right: 1rem;
+    }
+    span{
+        font-size: 30px;
+    }
+    .title-large{
+        font-size: 44px;
+        font-weight: bold;
+    }
+}
+
+.nav-options{
     display: flex;
-    gap: 1rem;
+    gap: 2.5rem;
+    padding: 20px 14px 0 0;
+    font-size: 26px;
+    background: rgb(255, 192, 203);
+	background: radial-gradient(circle at 10% 90%, $base-red 15%, $base-orange 28%, $base-yellow 35%, $base-teal 45%, $base-bergundy );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .card-container{
-    width: calc(100% - calc(289px + 4rem));
+    width: calc(100% - calc(289px + 4rem + 30px));
     height: calc(100vh - calc(64px + 4rem));
-    background-color: aquamarine;
     margin: 2rem;
     border-radius: 6px;
-    box-shadow: 0 0 1px 1px grey;
+    box-shadow: 0 0 1px 1px $default-font-color;
 }
 
 footer{
-    background-color: lightcoral;
-    padding: 1rem;
-    box-shadow: 0 0 1px 1px grey;
 
 }
