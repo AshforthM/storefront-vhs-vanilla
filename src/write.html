@@ -53,7 +53,7 @@
         <ul class="card-list">
           <!-- Form -->
           <form id="addForm" class="add-item-form">
-            <div class="">
+            <div class="update-container">
               <div class="image-display">
                 <img
                   id="uploadImage"
@@ -70,7 +70,7 @@
                 />
               </div>
 
-              <div class="product-name form-control">
+              <div class="product-title form-control">
                 <label for="item-name">Product Name</label>
                 <input id="itemName" type="text" placeholder="name" />
               </div>
@@ -84,9 +84,12 @@
                 <label for="item-blurb">Brief description</label>
                 <input id="itemBlurb" type="text" placeholder="blurb" />
               </div>
+              <div>
+                <button class="btn-submit" type="submit">Add New Product</button>
+                <a href="index.html" class="btn-cancel">Cancel</a>
+              </div>
             </div>
-
-            <button class="btn-submit" type="submit">Add New Product</button>
+            
           </form>
         </ul>
       </div>

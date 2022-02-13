@@ -13,8 +13,8 @@ export default function renderCard({urlPath, key, productName, price, blurb}) {
     </ul>
     <div class="product-details">
       <span class="product-name">${productName}</span>
-      <span class="price">${price}</span>
-      <span class="blurb">${blurb}</span>
+      <span class="price">$${price}</span>
+      <span class="blurb">"${blurb}"</span>
       <button class="btn-buy">Buy Now</button>          
     </div>            
   </li>
@@ -42,8 +42,11 @@ function onUpdateProduct(e) {
 
 function onDeleteproduct(e) {
   e.preventDefault();
-  const key = e.target.dataset.key;
-  const productRef = dataRef(db, `items/${key}`);
-  remove(productRef);
-  window.location.assign("index.html");
+
+  if(window.confirm("Are you sure you want to delete this product?")){
+    const key = e.target.dataset.key;
+    const productRef = dataRef(db, `items/${key}`);
+    remove(productRef);
+    window.location.assign("index.html");
+  }
 }

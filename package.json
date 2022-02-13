@@ -5,8 +5,8 @@
   "scripts": {
     "clean": "rm -rf node_modules .git .parcel-cache dist .DS_Store",
     "static": "cp -rf ./src/static   dist",
-    "start": "npx parcel src/index.html",
-    "build": "npx parcel build src/index.html"
+    "start": "npx parcel src/index.html src/update.html src/write.html",
+    "build": "npx parcel build src/index.html src/update.html src/write.html"
   },
   "keywords": [],
   "author": "M A",
