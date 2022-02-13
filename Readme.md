@@ -2,6 +2,8 @@
 Sample storefront for selling VHS tapes. Allows for adding new products, updating products, deleting, and reading to the main page. Uses Firebase Realtime Database, parcel, vanilla JavaScript, and Sass for CSS preprocessing. Deployed using Netlify.
 
 ## [Link to live website](https://vhs-storefront.netlify.app/)
+* [Shortcut to JavaScript files](https://github.com/AshforthM/storefront-vhs-vanilla/tree/main/src/js)
+* [Shortcut to SCSS](https://github.com/AshforthM/storefront-vhs-vanilla/tree/main/src/scss)
 
 Live site does not allow for adding, updating or deleting products for database security purposes.
 
